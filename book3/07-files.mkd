@@ -507,9 +507,9 @@ the `write` method does not add the newline automatically.
 24
 ~~~~
 
-When you are done writing, you have to close the file to make sure that
-the last bit of data is physically written to the disk so it will not be
-lost if the power goes off.
+When you are done writing, you have to close the file to It is a good 
+practice to close the file after it has been opened to free up system 
+resources and avoid data corruption.
 
 ~~~~ {.python}
 >>> fout.close()
